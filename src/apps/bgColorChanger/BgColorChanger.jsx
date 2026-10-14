@@ -1,5 +1,7 @@
 import { useState } from "react";
-function App() {
+import '../../App.css';
+
+function BgColorChanger() {
   const [color, setColor] = useState("Black");
 
   return (
@@ -184,4 +186,4 @@ function App() {
   )
 }
 
-export default App
+export default BgColorChanger
