@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const projects = [
   {
     id: "01",
-    title: "Backgorund Color Changer",
+    title: "Background Color Changer",
     description: "A short description of your project.",
     path: "/bgColorChanger",
   },
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     id: "04",
-    title: "Currency Convertor",
+    title: "Currency Converter",
     description: "A short description of your project.",
     path: "/currencyConverter",
   },
@@ -34,7 +34,7 @@ export default function Home() {
       <div className="mx-auto max-w-5xl">
 
         {/* Hero Section */}
-        <section className="border-b border-[#292b28] py-20 sm:py-28">
+        <section className="border-b border-[#292b28] pt-20 pb-10 sm:pt-28 sm:pb-12">
           <p className="mb-8 flex items-center gap-3 text-[11px] font-semibold tracking-[2px] text-[#92968d]">
             <span className="h-2 w-2 rounded-full bg-[#a3b18a]" />
             AVAILABLE FOR OPPORTUNITIES
@@ -42,30 +42,32 @@ export default function Home() {
 
           <h1 className="text-4xl font-semibold leading-tight tracking-[-2px] sm:text-6xl md:text-7xl">
             Hi, I'm{" "}
-            <span className="text-[#a3b18a]">Your Name.</span>
+            <span className="text-[#a3b18a]">Mayank Patle.</span>
           </h1>
 
-          <p className="mt-7 max-w-xl text-sm leading-8 text-[#a5a79f] sm:text-base">
-            I'm a developer who enjoys building thoughtful digital
-            experiences, solving problems, and turning ideas into
-            practical projects.
+          <p className="mt-7 max-w-full text-sm leading-8 text-[#a5a79f] sm:text-base">
+            I'm a React developer focused on building responsive user
+            interfaces, creating interactive web applications, and turning
+            ideas into clean, functional digital experiences.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-3 text-xs text-[#d0d1ca]">
-            <span>Developer</span>
+          <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-[#d0d1ca]">
+            <span>Analytical</span>
             <span className="text-[#65685f]">/</span>
-            <span>Problem Solver</span>
+            <span>Detail-Oriented</span>
             <span className="text-[#65685f]">/</span>
-            <span>Constant Learner</span>
+            <span>Evolving</span>
           </div>
         </section>
 
         {/* Projects Section */}
-        <section className="py-16 sm:py-20">
+        <section className="pt-8 pb-16 sm:pt-10 sm:pb-20">
           <div className="mb-8 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
             <div>
               <p className="mb-3 text-[11px] font-semibold tracking-[2px] text-[#92968d]">
-                SELECTED WORK
+                Built with Intent — small applications, thoughtfully
+                engineered, with an emphasis on clean interfaces, practical
+                functionality, and maintainable code.
               </p>
 
               <h2 className="text-3xl font-medium tracking-tight">
@@ -119,7 +121,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="flex justify-between gap-4 border-t border-[#292b28] py-6 text-[10px] tracking-[1.2px] text-[#777a71]">
-          <span>© {new Date().getFullYear()} Your Name</span>
+          <span>© {new Date().getFullYear()} Mayank Patle</span>
           <span>BUILT WITH REACT</span>
         </footer>
 

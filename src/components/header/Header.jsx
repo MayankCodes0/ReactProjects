@@ -19,11 +19,11 @@ export default function Header() {
         {/* Logo / Name */}
         <Link to="/" className="group flex items-center gap-3">
           <div className="flex h-9 w-9 items-center justify-center rounded border border-[#41483a] bg-[#1c1f1a] text-sm font-semibold text-[#a3b18a] transition-colors group-hover:border-[#a3b18a]">
-            YN
+            MP
           </div>
 
           <span className="text-sm font-semibold tracking-wide text-[#e8e9e4]">
-            Your Name<span className="text-[#a3b18a]">.</span>
+            Mayank Patle<span className="text-[#a3b18a]">.</span>
           </span>
         </Link>
 
