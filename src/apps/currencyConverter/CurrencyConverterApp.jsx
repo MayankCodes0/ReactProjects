@@ -57,10 +57,6 @@ function CurrencyConverterApp() {
                   Currency exchange calculator
                 </p>
               </div>
-
-              <span className="rounded border border-[#41443d] px-3 py-1.5 text-xs font-medium text-[#a3b18a]">
-                FX / 01
-              </span>
             </div>
 
             <form
