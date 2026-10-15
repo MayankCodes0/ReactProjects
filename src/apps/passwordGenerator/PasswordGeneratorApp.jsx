@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import '../../App.css';
+import ProjectConcepts from '../../components/common/ProjectConcepts';
+import { projectConceptsData } from '../../data/projectConceptsData';
 
 function PasswordGeneratorApp() {
 
@@ -25,7 +27,6 @@ function PasswordGeneratorApp() {
   }, [length, numAllowed, charAllowed, setPassword]);
 
   const passwordRef = useRef(null);
-  console.log(passwordRef)
 
   const copyToClipboard = () => {
     passwordRef.current?.select();
@@ -37,11 +38,11 @@ function PasswordGeneratorApp() {
   }, [length, numAllowed, charAllowed, passwordGenerator]);
 
   return (
-    <>
-      <main className="min-h-[calc(100vh-65px)] bg-[#101110] px-5 py-16 text-[#e8e9e4] sm:py-24">
+    <main className="min-h-[calc(100vh-65px)] bg-[#101110] px-5 py-16 text-[#e8e9e4] sm:py-24">
+      <div className="mx-auto w-full max-w-4xl">
 
+        {/* Generator Container */}
         <div className="mx-auto w-full max-w-2xl">
-
           {/* Heading */}
           <p className="mb-4 text-xs font-semibold tracking-[2px] text-[#a3b18a]">
             INTERACTIVE PROJECT / 02
@@ -171,13 +172,18 @@ function PasswordGeneratorApp() {
 
           {/* Footer Note */}
           <div className="mt-6 flex flex-wrap justify-between gap-3 text-xs text-[#777a71]">
-            <span>Built with React useState & useCallback</span>
+            <span>Built with React useState &amp; useCallback</span>
             <span>Length: 8–32</span>
           </div>
-
         </div>
-      </main>
-    </>
+
+        {/* Information Div below actual project interface */}
+        <div className="mt-14 w-full">
+          <ProjectConcepts {...projectConceptsData.passwordGenerator} />
+        </div>
+
+      </div>
+    </main>
   )
 }
 

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import ProjectConcepts from "../../components/common/ProjectConcepts";
+import { projectConceptsData } from "../../data/projectConceptsData";
 
 function BgColorChanger() {
   const [color, setColor] = useState("#101110");
@@ -13,10 +15,11 @@ function BgColorChanger() {
 
   return (
     <main
-      className="min-h-screen w-full transition-colors duration-300"
+      className="min-h-screen w-full transition-colors duration-300 pb-36"
       style={{ backgroundColor: color }}
     >
-      <div className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-5 pb-36 pt-16 text-center">
+      {/* Actual Project Interface */}
+      <div className="mx-auto flex min-h-[60vh] max-w-5xl flex-col items-center justify-center px-5 pt-16 pb-8 text-center sm:min-h-[65vh]">
         <p className="mb-4 text-xs font-semibold uppercase tracking-[3px] text-white/60">
           Interactive Project
         </p>
@@ -39,6 +42,14 @@ function BgColorChanger() {
             {color.toUpperCase()}
           </span>
         </div>
+      </div>
+
+      {/* Information Div below the actual project interface */}
+      <div className="mx-auto max-w-5xl px-5">
+        <ProjectConcepts
+          {...projectConceptsData.bgColorChanger}
+          containerClassName="border-white/15 bg-[#171916]/95 text-[#e8e9e4]"
+        />
       </div>
 
       {/* Color Controls */}

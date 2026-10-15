@@ -1,15 +1,13 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Header from './components/header/Header'
 import { Outlet, useLocation } from 'react-router'
 
-
 function Layout() {
-
-    const {pathName} = useLocation();
+    const { pathname } = useLocation();
 
     useEffect(() => {
         window.scrollTo(0, 0);
-    }, [pathName]);
+    }, [pathname]);
     
     return (
         <>

@@ -5,25 +5,25 @@ const projects = [
   {
     id: "01",
     title: "Background Color Changer",
-    description: "A short description of your project.",
+    description: "Interactive color palette changer demonstrating dynamic styling, state binding, and list rendering.",
     path: "/bgColorChanger",
   },
   {
     id: "02",
     title: "Counter App",
-    description: "A short description of your project.",
+    description: "State-managed numerical counter with range boundaries (0-20), progress tracking, and validation alerts.",
     path: "/counter",
   },
   {
     id: "03",
     title: "Password Generator",
-    description: "A short description of your project.",
+    description: "Configurable credential generator with character controls, length sliders, and clipboard integration.",
     path: "/passwordGenerator",
   },
   {
     id: "04",
     title: "Currency Converter",
-    description: "A short description of your project.",
+    description: "Real-time foreign exchange converter featuring custom data hooks, modular inputs, and currency swapping.",
     path: "/currencyConverter",
   },
 ];

@@ -1,11 +1,10 @@
-import React from "react";
 import { Link, NavLink } from "react-router";
  
 const projects = [
-  { name: "Backgorund Color Changer", path: "/bgColorChanger" },
+  { name: "Background Color Changer", path: "/bgColorChanger" },
   { name: "Counter", path: "/counter" },
   { name: "Password Generator", path: "/passwordGenerator" },
-  { name: "Currency Convertor", path: "/currencyConverter" },
+  { name: "Currency Converter", path: "/currencyConverter" },
 ];
 
 export default function Header() {
