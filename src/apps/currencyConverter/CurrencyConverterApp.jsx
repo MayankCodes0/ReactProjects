@@ -75,7 +75,7 @@ function CurrencyConverterApp() {
                     setFrom(currency);
                   }}
                   onAmountChange={(amount) => {
-                    setAmount(amount);
+                    amount < 0 ? '' : setAmount(amount);
                   }}
                   selectCurrency={from}
                 />
@@ -107,7 +107,7 @@ function CurrencyConverterApp() {
                     setTo(currency);
                   }}
                   onAmountChange={(amount) => {
-                    setConvertedAmount(amount);
+                    amount < 0 ? '' : setConvertedAmount(amount);
                   }}
                   selectCurrency={to}
                 />
